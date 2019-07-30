@@ -89,7 +89,7 @@
 <meta property="og:description" content="markdown语法本文规定：整个文档题目采用一级标题，每一大章题目采用二级标题，以此类推 一.标题说明：前面有n个#就是n级标题编码：### 例如这是三级标题效果： 例如这是三级标题二.字体说明：一组**包括的内容为加粗字体，*为倾斜字体，***为加粗倾斜字体，~~为删除线字体编码：**这是加粗字体**，*这是倾斜字体*，***这是加粗倾斜字体***，~~这是删除线字体~~效果：这是加粗字体，这">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://yoursite.com/2019/07/27/markdown-grammer/images/miao.jpg">
-<meta property="og:updated_time" content="2019-07-29T12:07:56.061Z">
+<meta property="og:updated_time" content="2019-07-30T08:33:15.294Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="markdown语法">
 <meta name="twitter:description" content="markdown语法本文规定：整个文档题目采用一级标题，每一大章题目采用二级标题，以此类推 一.标题说明：前面有n个#就是n级标题编码：### 例如这是三级标题效果： 例如这是三级标题二.字体说明：一组**包括的内容为加粗字体，*为倾斜字体，***为加粗倾斜字体，~~为删除线字体编码：**这是加粗字体**，*这是倾斜字体*，***这是加粗倾斜字体***，~~这是删除线字体~~效果：这是加粗字体，这">
@@ -317,7 +317,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  800字
+                  837字
                 </span>
               
 
@@ -361,11 +361,12 @@
 <blockquote>
 <p>这是引用的内容</p>
 </blockquote>
-<h2 id="四-分割线"><a href="#四-分割线" class="headerlink" title="四.分割线"></a>四.分割线</h2><p><strong>说明：</strong><br>3个以上的<code>-</code>或<code>*</code>，为分割线<br><strong>编码：</strong><br><code>---</code>，<code>***</code></p>
-<h2 id="效果："><a href="#效果：" class="headerlink" title="效果："></a><strong>效果：</strong></h2><hr>
+<h2 id="四-分割线"><a href="#四-分割线" class="headerlink" title="四.分割线"></a>四.分割线</h2><p><strong>说明：</strong><br>3个以上的<code>-</code>或<code>*</code>，为分割线，注意：与前面内容空一行，否则会变成标题<br><strong>编码：</strong><br><code>---</code>，<code>***</code><br><strong>效果：</strong></p>
+<hr>
+<hr>
 <h2 id="五-图片"><a href="#五-图片" class="headerlink" title="五.图片"></a>五.图片</h2><p><strong>说明：</strong><br>！[图片名称]（images/miao.jpg “这里是鼠标悬停显示的文字”），注意：这里的图片路径以编译后的图片路径为准<br><strong>编码：</strong><br><code>![喵帕斯](images/miao.jpg &quot;喵帕斯&quot;)</code><br><strong>效果：</strong><br><img src="images/miao.jpg" alt="喵帕斯" title="喵帕斯"></p>
 <h2 id="六-超链接"><a href="#六-超链接" class="headerlink" title="六.超链接"></a>六.超链接</h2><p><strong>说明：</strong><br><code>[链接名称](链接网址)</code><br><strong>编码：</strong><br><code>[百度](http://www.baidu.com)</code><br><strong>效果：</strong><br><a href="http://www.baidu.com" target="_blank" rel="noopener">百度</a></p>
-<h2 id="七-列表"><a href="#七-列表" class="headerlink" title="七.列表"></a>七.列表</h2><h3 id="无序列表"><a href="#无序列表" class="headerlink" title="无序列表"></a>无序列表</h3><p><strong>说明：</strong><br>在内容前加一个<code>+</code>（或<code>-</code>或<code>*</code>）和空格，这个内容就会以有序列表的形式显示<br><strong>编码：</strong></p>
+<h2 id="七-列表"><a href="#七-列表" class="headerlink" title="七.列表"></a>七.列表</h2><h3 id="无序列表"><a href="#无序列表" class="headerlink" title="无序列表"></a>无序列表</h3><p><strong>说明：</strong><br>在内容前加一个<code>+</code>（或<code>-</code>或<code>*</code>）和空格，这个内容就会以有序列表的形式显示<br>注意：结尾空一行，否则后面的内容也会跟着缩进<br><strong>编码：</strong></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">+ 列表内容（注意空格）</span><br><span class="line">- 列表内容</span><br><span class="line">* 列表内容</span><br></pre></td></tr></table></figure>
 
 <p><strong>效果：</strong></p>
@@ -403,7 +404,7 @@
 </ul>
 </li>
 </ol>
-<h2 id="八-表格"><a href="#八-表格" class="headerlink" title="八.表格"></a>八.表格</h2><p><strong>说明：</strong><br>请看编码示例,注意：表格要与上面的文本内容空一行，否则无法解析<br>第二行代码中，<code>---</code>、<code>:--</code>是左对齐，<code>:-:</code>为居中,<code>--:</code>为右对齐,但我这里都是显示左对齐，解决办法在探索中<br><strong>编码：</strong></p>
+<h2 id="八-表格"><a href="#八-表格" class="headerlink" title="八.表格"></a>八.表格</h2><p><strong>说明：</strong><br>请看编码示例，注意：表格要与上面的文本内容空一行，否则无法解析<br>第二行代码中，<code>---</code>、<code>:--</code>是左对齐，<code>:-:</code>为居中,<code>--:</code>为右对齐，但我这里都是显示左对齐，解决办法在探索中<br><strong>编码：</strong></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">|姓名|技能|排名|</span><br><span class="line">|---|:-:|--:|</span><br><span class="line">|刘备|唱|老大|</span><br><span class="line">|关羽|跳|老二|</span><br><span class="line">|张飞|rap|老三|</span><br></pre></td></tr></table></figure>
 
 <p><strong>效果：</strong></p>
@@ -456,6 +457,22 @@
       
       
 
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/07/30/douyin-prd/" rel="prev" title="抖音-产品需求文档（prd）">
+                抖音-产品需求文档（prd） <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
       
 
       
@@ -531,7 +548,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -584,7 +601,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#markdown语法"><span class="nav-number">1.</span> <span class="nav-text">markdown语法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#一-标题"><span class="nav-number">1.1.</span> <span class="nav-text">一.标题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#例如这是三级标题"><span class="nav-number">1.1.1.</span> <span class="nav-text">例如这是三级标题</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二-字体"><span class="nav-number">1.2.</span> <span class="nav-text">二.字体</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三-引用"><span class="nav-number">1.3.</span> <span class="nav-text">三.引用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#四-分割线"><span class="nav-number">1.4.</span> <span class="nav-text">四.分割线</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#效果："><span class="nav-number">1.5.</span> <span class="nav-text">效果：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#五-图片"><span class="nav-number">1.6.</span> <span class="nav-text">五.图片</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#六-超链接"><span class="nav-number">1.7.</span> <span class="nav-text">六.超链接</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#七-列表"><span class="nav-number">1.8.</span> <span class="nav-text">七.列表</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#无序列表"><span class="nav-number">1.8.1.</span> <span class="nav-text">无序列表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#有序列表"><span class="nav-number">1.8.2.</span> <span class="nav-text">有序列表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#列表嵌套"><span class="nav-number">1.8.3.</span> <span class="nav-text">列表嵌套</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#八-表格"><span class="nav-number">1.9.</span> <span class="nav-text">八.表格</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#九-代码"><span class="nav-number">1.10.</span> <span class="nav-text">九.代码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#十-待更新"><span class="nav-number">1.11.</span> <span class="nav-text">十.待更新</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#markdown语法"><span class="nav-number">1.</span> <span class="nav-text">markdown语法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#一-标题"><span class="nav-number">1.1.</span> <span class="nav-text">一.标题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#例如这是三级标题"><span class="nav-number">1.1.1.</span> <span class="nav-text">例如这是三级标题</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二-字体"><span class="nav-number">1.2.</span> <span class="nav-text">二.字体</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三-引用"><span class="nav-number">1.3.</span> <span class="nav-text">三.引用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#四-分割线"><span class="nav-number">1.4.</span> <span class="nav-text">四.分割线</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#五-图片"><span class="nav-number">1.5.</span> <span class="nav-text">五.图片</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#六-超链接"><span class="nav-number">1.6.</span> <span class="nav-text">六.超链接</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#七-列表"><span class="nav-number">1.7.</span> <span class="nav-text">七.列表</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#无序列表"><span class="nav-number">1.7.1.</span> <span class="nav-text">无序列表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#有序列表"><span class="nav-number">1.7.2.</span> <span class="nav-text">有序列表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#列表嵌套"><span class="nav-number">1.7.3.</span> <span class="nav-text">列表嵌套</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#八-表格"><span class="nav-number">1.8.</span> <span class="nav-text">八.表格</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#九-代码"><span class="nav-number">1.9.</span> <span class="nav-text">九.代码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#十-待更新"><span class="nav-number">1.10.</span> <span class="nav-text">十.待更新</span></a></li></ol></li></ol></div>
             
 
           </div>
